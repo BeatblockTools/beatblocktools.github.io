@@ -26,6 +26,11 @@ const contributors = [
         name: 'Contrast',
         icon: 'contrast.png',
         title: 'Contributor'
+    },
+    {
+        name: 'Flowrence',
+        icon: 'flowrence.png',
+        title: 'Contributor'
     }
 ]
 
