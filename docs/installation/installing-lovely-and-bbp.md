@@ -16,8 +16,6 @@ This page covers the installation of **Lovely Injector** and **Beatblock Plus**.
 
 ## Installing Lovely Injector
 
-Note: It is recommended for Linux users to run Beatblock with proton rather than the native Linux build of the game. This is due to the fact that the proton build works completely fine for modding with no performance impact and no additional bugs, however the Linux Native version takes more effort to install lovely onto and comes with more bugginess (almost entirely relating to mods that have custom imgui windows). If you still wish to use the native Linux build, skip to the next part of the guide
-
 1) Download the latest version of [lovely-injector](https://github.com/ethangreen-dev/lovely-injector/releases/latest).
 
 ![lovely-injector github releases page](assets/lovely-injector.png)
@@ -37,6 +35,9 @@ Note: It is recommended for Linux users to run Beatblock with proton rather than
 If you see the terminal, that means you've successfully installed lovely-injector! Now for Beatblock Plus.
 
 ## Installing Lovely Injector on the native Linux build of Beatblock
+
+Note: It is recommended for Linux users to run Beatblock with proton rather than the native Linux build. This is due to the fact that the proton build works completely fine for modding with no performance impact and no additional bugs. The native build on the other hand, takes extra effort to install lovely onto and does have additional bugs (which are almost entirely imgui related).  
+**To install lovely-injector on Linux with proton, follow the general instructions in the section above.**
 
 1) Download the latest Linux version of [lovely-injector](https://github.com/ethangreen-dev/lovely-injector/releases/latest).
 
