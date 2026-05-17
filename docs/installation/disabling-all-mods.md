@@ -12,3 +12,5 @@ To temporarily disable all mods, open the properties menu of Beatblock.
 In 'Launch Options', type `--disable-mods`
 
 ![disabling mods](assets/disabling-mods.png)
+
+You can now close the properties and relaunch Beatblock with no mods being applied.
