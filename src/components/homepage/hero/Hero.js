@@ -15,7 +15,7 @@ export default function Hero() {
 
         <a href={useBaseUrl('/docs/intro')}
           className={[styles.button, styles.docs].join(' ')}
-        >Documentation</a>
+        >Wiki</a>
 
         <a href="https://github.com/BeatblockTools/BeatblockPlus/releases/latest"
           target='blank'
