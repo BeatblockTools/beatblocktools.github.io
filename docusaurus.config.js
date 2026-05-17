@@ -96,7 +96,7 @@ const config = {
             position: 'left',
             label: 'Wiki',
           },
-          {to: '/blog', label: 'Posts', position: 'left'},
+          // {to: '/blog', label: 'Posts', position: 'left'},
           {
             href: 'https://github.com/BeatblockTools',
             label: 'GitHub',
