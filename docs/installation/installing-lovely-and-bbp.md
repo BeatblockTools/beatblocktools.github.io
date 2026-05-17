@@ -69,9 +69,8 @@ export LUA_CPATH="$APPDIR/lib/?.so;$APPDIR/lib/lua/5.1/?.so;$LUA_CPATH"
 
 LD_PRELOAD="$LD_PRELOAD:liblovely.so" "$APPDIR/bin/Beatblock" --mod-dir="./../../../../beatblock/Mods" "$@"
 ```
-
-5) Navigate to Beatblock's Steam launch arguments and add `~/.local/share/Steam/steamapps/common/Beatblock/run_lovely_linux.sh %command%`.
-    Note: If you want a terminal window like what Windows/proton has, put `xterm -hold -e ` before the path in the launch command.
+5) Navigate to Beatblock's Steam launch arguments and add `~/.local/share/Steam/steamapps/common/Beatblock/run_lovely_linux.sh %command%`.  
+   If you want a terminal window like what Windows/proton has, put `xterm -hold -e ` before the path in the launch command.
 
 6) Launch the game. This should create a `Mods` folder at ~/.local/share/beatblock
 
@@ -81,7 +80,7 @@ LD_PRELOAD="$LD_PRELOAD:liblovely.so" "$APPDIR/bin/Beatblock" --mod-dir="./../..
 
 ![beatblock plus github releases page](assets/beatblock-plus.png)
 
-2) Open your game's save directory.
+2) Open your game's save directory:
 
 For Windows:
     - Press `Win + R`
