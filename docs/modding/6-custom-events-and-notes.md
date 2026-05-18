@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+description: How to add custom events and notes to the game.
 ---
 
 # Custom Events and Notes

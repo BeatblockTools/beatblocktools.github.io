@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: How to decompile the code and assets of Beatblock.
 ---
 
 # Extracting Game Files

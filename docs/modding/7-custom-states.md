@@ -1,5 +1,6 @@
 ---
 sidebar_position: 7
+description: How to add custom states to the game.
 ---
 
 # Custom Gamestates

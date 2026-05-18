@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+description: How to set up BBP configs in your mod.
 ---
 
 # Creating a Mod Config

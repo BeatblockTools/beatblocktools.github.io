@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: How to edit the Beatblock code, using Lovely Injector.
 ---
 
 # Patching the Game

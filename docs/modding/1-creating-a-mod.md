@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: How to prepare a new mod folder and create your first mod.
 ---
 
 # Creating a Mod
