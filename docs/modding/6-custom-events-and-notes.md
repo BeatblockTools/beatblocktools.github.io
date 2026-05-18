@@ -10,7 +10,7 @@ This wiki is not complete, as not much is known about how events and notes work.
 This also means that the information here might be inaccurate.
 ::::
 
-# Loading Events
+## Loading Events
 Whether you are adding an event or creating a custom note, you must create an event first.\
 First, create a `.lua` file inside `Mods/your-mod/events/`. Then copy an event from the game as your template.
 
@@ -38,7 +38,7 @@ description = [[Parameters:
 - `hitCount` - Seems to return the number of times you can hit a single note. ex. You can hit a hold note twice, and another time if the extra tap is enabled. Is always 0 for events.
 - `shouldEditorDraw` - Returns whether the event should be drawn on the screen. It is used for large notes, like hold.
 
-# Loading Entities
+## Loading Entities
 Entities are almost everything in the game. Blocks, Cranky, particles and some level backgrounds like in Lawrence and Terabyte are all entities.\
 If you are adding a custom note, the note will not work without an entity.\
 First, create a `.lua` file inside `./Mods/your-mod/entities/`. Paste the following template inside:

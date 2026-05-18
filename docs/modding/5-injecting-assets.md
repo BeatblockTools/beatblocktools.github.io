@@ -4,13 +4,7 @@ description: How to quickly add images and other assets to the game.
 ---
 
 # Injecting Assets
-
-# Figuring out the correct path
-To inject your assets correctly. You must know how Lua's tables work. It won't be covered in this guide as there are thousands of Lua guides online.\
-Beatblock loads all assets into a table when the game starts, and BBP's asset injector works by converting the file path to a table path. For example, if your asset's path is `folder/someOtherFolder/texture.png` it would be injected as `folder.someOtherFolder = <texture.png asset>`\
-If the asset already exists in the table, it will be overwritten by the mod, otherwise it will be loaded as a new asset.
-
-# Injecting Assets
+## Figuring out the correct path
 To inject an asset, we need to find its path first. If you are injecting:
 - a sprite, open the `preload/sprites.lua` file of the game.
 - a sound, open the `preload/sounds.lua` file of the game.
@@ -34,6 +28,12 @@ Next, I will create a file named `snone.png` inside the folder to match the tabl
 Now when I start the game all of my S ranks in the song select menu will be replaced by fake F ranks.
 
 ![f-rank](assets/f-rank.png)
+
+## Accessing assets in your code
+To access your injected asset correctly. You must know how Lua's tables work. It won't be covered in this guide as there are thousands of Lua guides online.\
+Beatblock loads all assets into a table when the game starts, and BBP's asset injector works by converting the file path to a table path. For example, if your asset's path is `folder/someOtherFolder/texture.png` it would be injected as `folder.someOtherFolder = <texture.png asset>`\
+In short: Every folder turns into a table and the asset at the asset is set as a value of the final table.\
+If an asset with that name already existed in the table, it will be overwritten by the mod, otherwise it will be added to the table as a new asset.
 
 ## Note on Animations
 Animations require an extra `data.json` file to store animation data. Example:

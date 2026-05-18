@@ -4,9 +4,6 @@ description: How to install Lovely Injector and Beatblock Plus.
 ---
 
 # Installing Lovely Injector and BBP
-
-This page covers the installation of **Lovely Injector** and **Beatblock Plus**.
-
 ## What are they?
 
 - **Lovely Injector** is a runtime Lua injector for LÖVE2D, the game framework Beatblock uses. It allows us to inject our own code into the game.

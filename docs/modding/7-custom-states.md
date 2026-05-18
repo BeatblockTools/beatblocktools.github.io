@@ -5,10 +5,10 @@ description: How to add custom states to the game.
 
 # Custom Gamestates
 
-# What is a state?
+## What is a state?
 A state contains the view and logic that the game performs right now. The Main Menu, Song Select, Editor, Gameplay itself, etc., are each a state.
 
-# Adding your own state
+## Adding your own state
 Create a `states` folder inside your mod folder and then create a `.lua` file in it. Paste the following code inside the `.lua` file:
 ```jsx title="Mods/your-mod/states/MyCustomState.lua"
 local st = Gamestate:new(MyCustomState)
