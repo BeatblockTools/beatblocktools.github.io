@@ -12,4 +12,4 @@ Once you have the zip file, simply open the Mods menu in Beatblock and drag the 
 When you get the popup, saying that the mod was installed, you can restart your game.
 [ Epic Recording of me installing biitblock ]
 
-<!-- ![drag and drop](assets/cool-recording.gif) -->
+![drag and drop](assets/drag-and-drop.gif)
