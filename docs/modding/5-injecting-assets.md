@@ -32,7 +32,7 @@ Now when I start the game all of my S ranks in the song select menu will be repl
 ## Accessing assets in your code
 To access your injected asset correctly. You must know how Lua's tables work. It won't be covered in this guide as there are thousands of Lua guides online.\
 Beatblock loads all assets into a table when the game starts, and BBP's asset injector works by converting the file path to a table path. For example, if your asset's path is `folder/someOtherFolder/texture.png` it would be injected as `folder.someOtherFolder = <texture.png asset>`\
-In short: Every folder turns into a table and the asset at the asset is set as a value of the final table.\
+In short: Every folder turns into a table and the asset is set as a value of the final table.\
 If an asset with that name already existed in the table, it will be overwritten by the mod, otherwise it will be added to the table as a new asset.
 
 ## Note on Animations

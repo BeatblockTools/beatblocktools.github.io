@@ -28,7 +28,7 @@ description = [[Parameters:
   speedMult: (Optional) Speed multiplier for approach
 ]]
 ```
-- `info.storeInChart` - Whether the event should be stored in the `chart.json` file. This seems to be `true` for notes and `false` for everything else.
+- `info.storeInChart` - Whether the event should be stored in a `chart.json`, instead of a `level.json`.
 - `info.allowInNoVFX` - Whether the event should be played if the VFX accessibility option is turned off.
 - `info.tooltip` - Shown when you hover the event in the Event Palette.
 - `onLoad` - Is called when the level loads.
