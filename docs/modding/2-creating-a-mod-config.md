@@ -28,13 +28,10 @@ This should be used when you only need text, number, and boolean fields. Simply 
 ```
 ![auto-generated-config](assets/auto-generated-config.png)
 
-You can use the variables anywhere in your code like this:\
-`local myNumber = mods["my-first-mod"].config.NumberOption`
-
 ## Advanced Configuration
-Should be used when you need complex elements that aren't available in the basic configuration. Gives you full control over the ImGui renderer.\
-It can't be used together with the basic configuration! You must pick one.\
-Create a file named `config.lua` inside `Mods/your-mod/` and render the ImGui elements in it.
+This should be used when you need complex elements that aren't available in the basic configuration. It gives you full control over the ImGui renderer.\
+To use this method, create a file named `config.lua` inside `Mods/your-mod-id/` and then write your own ImGui interface in it.
+As soon as you include a config.lua file in your mod, the interface logic of the Basic Configuration gets disabled entirely and no configs will be displayed automatically. Keep in mind that you should still write the configs table in `mod.json` though, because the values in there are used as the default configs for your mod.\
 ```jsx title="Mods/my-first-mod/config.lua"
 imgui.SeparatorText("Fancy Category")
 
@@ -55,7 +52,23 @@ end
 ```
 ![advanced-config](assets/advanced-config.png)
 
-## How Configs Are Saved
+You may have noticed that while you'd normally access your mod data with `mods["your-mod-id"]`, in this file specifically you can just use `mod` instead.
 
-When you click 'Save Config' in the interface, BBP creates another json file in your mod folder, named `config.json`. This new file contains the configs chosen by the player. The configs in your `mod.json` stay the same, because they are the default values.\
-If you're using an Advanced Configuration, you should still write the config table in `mod.json`, as you would for a Basic Configuration.
+## How Configs are Saved
+
+When you click 'Save Changes' in the Mods menu, BBP creates another json file in your mod folder, named `config.json`. This new file contains the configs chosen by the player. The configs in your `mod.json` stay the same, because they are the default values.\
+If you're using an Advanced Configuration, you should still write the config table in `mod.json`, as you would for a Basic Configuration, to prevent issues with the 'reset configs' feature.
+
+## Using the Configs in your mod code
+All config values can be accessed from the global `mods` table. You can read and write them like this:
+```jsx title="lua"
+-- reading config values
+local configValue = mods["your-mod-id"].config.valueName
+
+-- writing config values
+mods["your-mod-id"].config.otherValueName = 42
+
+-- bbp does not save config changes automatically, so remember
+-- to save your changes to the config.json after writing!
+bbp.utils.saveConfig("your-mod-id")
+```
