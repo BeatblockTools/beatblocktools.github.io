@@ -12,11 +12,11 @@ const features = [
         description: "Toggle and configure your mods with the BeatblockPlus in-game mod menu.",
         image: "mod-menu.png"
     },
-    {
-        title: "Enhanced Gameplay",
-        description: "Modify the game's code, textures, sounds and more!",
-        image: "gameplay.png"
-    },
+    // {
+    //     title: "Enhanced Gameplay",
+    //     description: "Modify the game's code, textures, sounds and more!",
+    //     image: "gameplay.png"
+    // },
     {
         title: "Community Creations",
         description: "Access a growing collection of mods and content created by the community.",
