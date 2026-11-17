@@ -23,7 +23,9 @@ This should be used when you only need text, number, and boolean fields. Simply 
         "Category": {
             "AnotherTextOption": "wow!!!"
         }
-    }
+    },
+    "depends": {},
+    "conflicts": {}
 }
 ```
 ![auto-generated-config](assets/auto-generated-config.png)

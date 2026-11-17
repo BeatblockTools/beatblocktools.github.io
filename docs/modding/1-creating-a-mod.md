@@ -20,7 +20,9 @@ This guide covers creating a mod that appears in the mod list and does nothing.
     "author": "Me!",
     "description": "This is my awesome mod! :D",
     "version": "1.0.0",
-    "config": []
+    "config": {},
+    "depends": {},
+    "conflicts": {}
 }
 ```
 
@@ -33,10 +35,26 @@ This guide covers creating a mod that appears in the mod list and does nothing.
 If you wanna use a custom mod icon, simply put your icon in `Mods/my-first-mod/icon.png`.\
 The icon must be 73x33 and has no color limitations.
 
+## Adding dependencies and conflicts (Optional)
+
+You can use the two fields `depends` and `conflicts` to list mod IDs from other mods that your mod either requires to run correctly, or can't coexist with. Here is an example of two dependencies and two conflicts.
+```jsx title="Mods/my-first-mod/mod.json"
+"depends": {
+    "epic-lib":"",
+    "the-other-lib":">=200.0.0"
+},
+"conflicts": {
+    "really-big-mod":"",
+    "made-up-id":">1.1.2"
+}
+```
+IDs are always the **key** and their versions always the **value**. Leaving the version as an empty string matches *all* versions, but you can optionally match specific versions with the following specifications: `=` `<=` `>=` `<` `>`
+
 ## Why?
 
-Setting this up:
-- Lets Beatblock Plus recognize the mod, so it appears in crash logs and the Mods menu.
-- Makes your mod toggleable through the Mods menu.
-- Allows the mod to use Beatblock Plus features such as asset injection.
-- Is a required step for uploading your mods to the modding discord server.
+Creating this file...
+- lets Beatblock Plus recognize the mod, so it appears in crash logs and the Mods menu.
+- makes your mod toggleable through the Mods menu.
+- allows the mod to use Beatblock Plus features such as asset injection.
+- is a required step for uploading your mods to the modding discord server.
+
