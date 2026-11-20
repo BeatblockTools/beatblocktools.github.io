@@ -21,9 +21,9 @@ description: How to install Lovely Injector and Beatblock Plus.
 
 ![opening installation folder](assets/opening-installation-folder.png)
 
-3) Drag the `version.dll` file inside lovely-injector to your game's installation folder.
+3) Drag the `winmm.dll` file from the lovely-injector zip to your game's installation folder.
 
-![putting lovely injector](assets/version-dll.png)
+![putting lovely injector](assets/winmm-dll.png)
 
 4) Launch the game. Make sure it also runs a terminal along with the game.
 
@@ -40,7 +40,7 @@ Note: It is recommended for Linux users to run Beatblock with proton rather than
 
 2) Navigate to your Beatblock's installation folder.
 
-3) Drag the `liblovely.so` and `run_lovely_linux` files inside lovely-injector to your game's installation folder.
+3) Drag the `liblovely.so` and `run_lovely_linux` files from the lovely-injector zip to your game's installation folder.
     Note: in the Beatblock folder, not the Beatblock/bin folder where the binary file is.
 
 4) Replace the run_lovely_linux.sh contents with the following:
